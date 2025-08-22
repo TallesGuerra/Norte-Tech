@@ -2,6 +2,7 @@
 
 ## Projetos
 
-- [Backend](./backend/)
-- [Mobile](./mobile/)
+<!-- - [Backend](./backend/)
+- [Mobile](./mobile/) -->
+
 - [Web Frontend](./web-frontend/)
