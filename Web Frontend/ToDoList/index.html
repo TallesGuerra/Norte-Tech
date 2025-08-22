@@ -10,48 +10,46 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
             rel="stylesheet">
 
-        <title>Lista de Compras</title>
+
+        <link rel="shortcut icon" href="../src/toDoIcon.svg" type="image/x-icon">
+
+        <title>To-Do List</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
         <div id="container">
-
-
             <main id="content">
-                <h1> To-Do List</h1>
-
-
-
-                <div>
-                    <div>
-                        <input type="text">
-                        <button> ADD </button>
-
+                <h1>
+                    <img src="../src/toDoIcon.svg" alt="To-Do Icon">
+                    To-Do List
+                </h1>
+                <div class="input-section">
+                    <div class="input-group">
+                        <input type="text" id="taskInput" placeholder="Digite sua tarefa..." maxlength="100">
+                        <button id="addBtn" class="btn btn-primary">Adicionar</button>
                     </div>
-
-
-
-                    <table>
-                        <input type="checkbox" name="" id="">
-                        <tr>Teste</tr>
-                        <button> X </button>
-                    </table>
-
-
                 </div>
 
-
-
+                <div class="table-section">
+                    <table id="todoTable">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Tarefa</th>
+                                <th>Data</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Tarefas serão inseridas aqui dinamicamente -->
+                        </tbody>
+                    </table>
+                </div>
             </main>
-
-
-
         </div>
 
-
-
-
+        <div id="notification" class="notification"></div>
 
         <script src="script.js"></script>
     </body>
