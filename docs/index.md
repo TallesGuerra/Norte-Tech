@@ -5,4 +5,4 @@
 <!-- - [Backend](./backend/)
 - [Mobile](./mobile/) -->
 
-- [Web Frontend](./web-frontend/)
+- [Web Frontend](https://tallesguerra.github.io/Norte-Tech/web-frontend/)
