@@ -2,8 +2,7 @@
 backend/
 mobile/
 
-docs/backend/
-docs/mobile/
+
 
 # Outras regras comuns (opcional)
 node_modules/
