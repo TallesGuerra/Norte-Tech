@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" sizes="16x16" href="../src/faviconRandomColor.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="./style.css">
+
+        <title>Random Colors</title>
+    </head>
+
+    <body>
+        <header>Random Color</header>
+        <main>
+            <h1 id="title">Clique em mim 👋</h1>
+
+            <div id="result">
+                A cor escolhida aparece aqui
+            </div>
+        </main>
+        <footer>Footer</footer>
+
+
+        <script>
+            const title = document.getElementById("title")
+            const result = document.getElementById("result")
+
+
+            function randomColor() {
+                return "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0")
+            }
+
+
+
+            title.addEventListener("click", () => {
+                const textColor = randomColor()
+                const bgColor = randomColor()
+
+                title.style.color = textColor
+                title.style.background = bgColor
+
+                result.textContent = `Cor do texto: ${textColor} | Cor de fundo: ${bgColor}`
+            })
+
+
+        </script>
+
+    </body>
+
+</html>

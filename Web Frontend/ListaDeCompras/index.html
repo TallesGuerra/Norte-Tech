@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../src/faviconCompras.png" sizes="16x16" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <title>Lista de Compras</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>🛒 Lista de Compras</h1>
+                <p>Organize suas compras de forma simples e eficiente</p>
+            </div>
+
+            <div class="input-section">
+                <div class="input-group">
+                    <input type="text" id="itemInput" placeholder="Digite o item que deseja adicionar..."
+                        maxlength="100">
+                    <button class="btn btn-primary" id="addBtn">Enviar</button>
+                    <button class="btn btn-warning" id="clearBtn">Limpar Lista</button>
+                </div>
+            </div>
+
+            <div class="table-section">
+                <div class="table-container">
+                    <table id="shoppingTable">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Data Adicionado</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Items serão inseridos aqui dinamicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="notification" class="notification"></div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
