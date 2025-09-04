@@ -1,7 +1,6 @@
 # Ignorar as pastas de projetos ainda não publicados
 backend/
-mobile/
-
+Web Frontend/BarbeariaCruz
 
 
 # Outras regras comuns (opcional)
