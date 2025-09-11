@@ -43,5 +43,27 @@ print("A soma de todos os numeros de 1 a 100 é : ", soma)
 
 """ ARRAYS E COLEÇÕES
 
+frutas = ["maçã", "banana", "laranja"]
 
- """
+print(frutas[0]) 
+print(frutas[2])
+
+
+dias = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]
+print(dias[6])
+
+
+frutas = []
+frutas.append("Maçã")
+frutas.append("Banana")
+frutas.append("Goiaba") 
+
+frutas.remove("Maçã")
+
+print(frutas)
+
+"""
+
+
+
+
